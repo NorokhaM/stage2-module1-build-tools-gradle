@@ -3,6 +3,9 @@ plugins {
     id 'maven-publish'
 }
 
+group 'com.mjc.school.gradle.build.tools'
+version '1.0'
+
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
 }
