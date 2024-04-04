@@ -17,22 +17,25 @@ repositories {
 publishing {
     publications {
         maven(MavenPublication) {
-        groupId='com.mjc.school.gradle.build.tools'
-        artefactId='utils'
-        version='1.0'
+        group 'com.mjc.school.gradle.build.tools'
+        version '1.0'
+        artifactId 'utils'
             from components.java
         }
     }
 }
 
 dependencies {
-    ApacheLang='org.apache.commons:commons-lang3:3.12.0'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
 }
 
 jar {
     manifest {
-        ImplemetationTitle='Gradle Build Tools'
-        ImplemetationVersion='1.0'
+        attributes(
+                'Main-Class': 'com.epam.utils.StringUtils',
+                'Implementation-Title': 'utils',
+                'Implementation-Version': version
+        )
     }
 }
 

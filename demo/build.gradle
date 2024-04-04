@@ -14,9 +14,8 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.example:utils:1.0.0'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    ApacheLang 'org.apache.commons:commons-lang3:3.12.0'
 }
 
 test {
