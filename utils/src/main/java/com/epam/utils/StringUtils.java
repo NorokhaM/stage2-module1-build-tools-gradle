@@ -2,6 +2,6 @@ package com.epam.utils;
 
 public class StringUtils {
     public static boolean isPositiveNumber(String str) {
-         return str.matches("\\d+");
+         return str.matches("\\d+") && str!=null && !str.isEmpty();
     }
 }
